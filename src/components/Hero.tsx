@@ -12,7 +12,7 @@ const Hero = () => {
                         A strategic leader and policy advisor bridging government, private sector, and civil society with a focus on impact-driven projects and organizational excellence.
                     </p>
                     <div className={styles.ctaGroup}>
-                        <a href="osahonokoh@gmail.com" className="btn btn-primary">Request Consultation</a>
+                        <a href="mailto:osahonokoh@gmail.com" className="btn btn-primary">Request Consultation</a>
                         <a href="#skills" className={`${styles.outlineBtn}`}>View Expertise</a>
                     </div>
 
