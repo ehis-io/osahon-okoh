@@ -5,7 +5,7 @@ const Contact = () => {
         <section id="contact" className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.heading}>
-                    <h2>Get in Touch</h2>
+                    <h2>Engagement</h2>
                     <p>Open for collaborations, speaking engagements, and consulting opportunities.</p>
                 </div>
 
@@ -17,9 +17,8 @@ const Contact = () => {
                     <div className={styles.card}>
                         <h3>LinkedIn</h3>
                         <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.link}>
-                            Connect with Osahon
+                            Connect on LinkedIn
                         </a>
-                        <p style={{ marginTop: '0.5rem', fontSize: '0.9rem' }}>500+ connections</p>
                     </div>
                     <div className={styles.card}>
                         <h3>Email</h3>

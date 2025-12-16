@@ -1,6 +1,8 @@
 .section {
-    padding: 6rem 0;
-    background-color: white;
+    padding: 4rem 0;
+    /* Reduced padding */
+    background-color: var(--light-bg);
+    border-top: 1px solid var(--border-color);
 }
 
 .container {
@@ -10,29 +12,60 @@
 }
 
 .heading {
-    text-align: center;
-    margin-bottom: 4rem;
+    display: none;
+    /* Hide main section title as we use sub-blocks now, or minimize it */
 }
+
+/* If we want to keep the main title 'Credentials' distinct, we can.
+   But let's hide the big H2 title in the component if we didn't remove it in TSX.
+   Wait, I didn't remove the H2 in the TSX above, so I should style it or hide it if redundant.
+   The TSX has a .heading div. I can make it very subtle. */
 
 .heading h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    display: none;
+    /* Actually, let's hide the big title to make it less obvious */
 }
 
-.grid {
+.contentWrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
 }
 
-.educationCard {
-    background: var(--light-bg);
-    padding: 2rem;
-    border-radius: var(--radius);
-    border: 1px solid var(--border-color);
+.sectionBlock h3 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #94a3b8;
+    /* Slate 400 - subtle label */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
 }
 
-.volunteering {
-    margin-top: 4rem;
+.compactList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.compactList li {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+.compactList li strong {
+    color: var(--heading-color);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .contentWrapper {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
 }

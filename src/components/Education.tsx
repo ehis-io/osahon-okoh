@@ -5,43 +5,38 @@ const Education = () => {
         <section id="education" className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.heading}>
-                    <h2>Education & Qualifications</h2>
+                    <h2>Credentials & Qualifications</h2>
                 </div>
 
-                <div className={styles.grid}>
-                    <div className={styles.educationCard}>
-                        <h3>Master’s in Project Management (MPM)</h3>
-                        <p className="text-sm text-gray-600 mb-2">International Project Management Academy, Oakland, USA</p>
+                <div className={styles.contentWrapper}>
+                    <div className={styles.sectionBlock}>
+                        <h3>Credentials</h3>
+                        <ul className={styles.compactList}>
+                            <li>
+                                <strong>Master’s in Project Management (MPM)</strong> — International Project Management Academy, Oakland, USA
+                            </li>
+                            <li>
+                                <strong>Diploma in Innovation Management</strong> — International Business Management Institute (IBMI)
+                            </li>
+                            <li>
+                                <strong>Certified Management Specialist</strong> — London Graduate School
+                            </li>
+                            <li>
+                                <strong>Human Resource Management</strong> — IMF Institute, USA
+                            </li>
+                        </ul>
                     </div>
-                    <div className={styles.educationCard}>
-                        <h3>Diploma in Innovation Management</h3>
-                        <p className="text-sm text-gray-600 mb-2">International Business Management Institute (IBMI)</p>
-                    </div>
-                    <div className={styles.educationCard}>
-                        <h3>Certified Management Specialist</h3>
-                        <p className="text-sm text-gray-600 mb-2">London Graduate School</p>
-                    </div>
-                    <div className={styles.educationCard}>
-                        <h3>Human Resource Management</h3>
-                        <p className="text-sm text-gray-600 mb-2">IMF Institute, USA</p>
-                    </div>
-                </div>
 
-                <div className={styles.volunteering}>
-                    <div className={styles.heading}>
-                        <h2>Volunteering & Community</h2>
-                    </div>
-                    <div className={styles.grid}>
-                        <div className={styles.educationCard}>
-                            <h3>TEDxAideyanSt</h3>
-                            <p className="font-bold text-secondary">Curator</p>
-                            <p>Sharing local stories with global impact.</p>
-                        </div>
-                        <div className={styles.educationCard}>
-                            <h3>Living Your Dream Initiative</h3>
-                            <p className="font-bold text-secondary">Volunteer</p>
-                            <p>Promoting social services and community engagement.</p>
-                        </div>
+                    <div className={styles.sectionBlock}>
+                        <h3>Community & Volunteering</h3>
+                        <ul className={styles.compactList}>
+                            <li>
+                                <strong>TEDxAideyanSt</strong> — Curator
+                            </li>
+                            <li>
+                                <strong>Living Your Dream Initiative</strong> — Volunteer
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

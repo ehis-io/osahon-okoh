@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Hero.module.css';
 
 const Hero = () => {
@@ -10,32 +11,33 @@ const Hero = () => {
                     <p className={styles.subtitle}>
                         A strategic leader and policy advisor bridging government, private sector, and civil society with a focus on impact-driven projects and organizational excellence.
                     </p>
-                    <div>
-                        <a href="#contact" className="btn btn-primary">Get in Touch</a>
-                        <a href="#experience" className="btn btn-secondary" style={{ marginLeft: '1rem' }}>View Experience</a>
+                    <div className={styles.ctaGroup}>
+                        <a href="#contact" className="btn btn-primary">Request Consultation</a>
+                        <a href="#skills" className={`${styles.outlineBtn}`}>View Expertise</a>
                     </div>
 
                     <div className={styles.metrics}>
                         <div className={styles.metricItem}>
-                            <h3>7+</h3>
+                            <h3>10+</h3>
                             <p>Years Experience</p>
                         </div>
                         <div className={styles.metricItem}>
                             <h3>50+</h3>
                             <p>Projects Led</p>
                         </div>
-                        <div className={styles.metricItem}>
-                            <h3>2k+</h3>
-                            <p>Followers</p>
-                        </div>
+
                     </div>
                 </div>
                 <div className={styles.imageContainer}>
-                    {/* Placeholder for now, user can replace with actual image */}
-                    <div className={styles.imagePlaceholder}>
-                        OO
-                    </div>
+                    <Image
+                        src="/osahon-main.jpg"
+                        alt="Osahon Okoh"
+                        fill
+                        priority
+                        className={styles.image}
+                    />
                 </div>
+
             </div>
         </section>
     );
