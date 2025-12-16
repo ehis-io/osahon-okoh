@@ -1,4 +1,5 @@
 import styles from './Skills.module.css';
+import RevealOnScroll from './RevealOnScroll';
 
 const skillCategories = [
     {
@@ -30,14 +31,16 @@ const Skills = () => {
 
                 <div className={styles.grid}>
                     {skillCategories.map((category, index) => (
-                        <div key={index} className={styles.card}>
-                            <h3>{category.title}</h3>
-                            <ul className={styles.list}>
-                                {category.skills.map((skill, i) => (
-                                    <li key={i}>{skill}</li>
-                                ))}
-                            </ul>
-                        </div>
+                        <RevealOnScroll key={index} delay={index * 100}>
+                            <div className={styles.card}>
+                                <h3>{category.title}</h3>
+                                <ul className={styles.list}>
+                                    {category.skills.map((skill, i) => (
+                                        <li key={i}>{skill}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </RevealOnScroll>
                     ))}
                 </div>
             </div>

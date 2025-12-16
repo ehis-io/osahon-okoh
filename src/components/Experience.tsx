@@ -1,4 +1,5 @@
 import styles from './Experience.module.css';
+import RevealOnScroll from './RevealOnScroll';
 
 interface ExperienceItem {
     company: string;
@@ -56,21 +57,23 @@ const Experience = () => {
 
                 <div className={styles.timeline}>
                     {experiences.map((exp, index) => (
-                        <div key={index} className={styles.item}>
-                            <div className={styles.icon}>
-                                {index + 1}
+                        <RevealOnScroll key={index} delay={index * 100}>
+                            <div className={styles.item}>
+                                <div className={styles.icon}>
+                                    {index + 1}
+                                </div>
+                                <div className={styles.content}>
+                                    <h3>{exp.company}</h3>
+                                    <span className={styles.role}>{exp.role}</span>
+                                    <span className={styles.date}>{exp.period}</span>
+                                    <ul className={styles.description}>
+                                        {exp.description.map((desc, i) => (
+                                            <li key={i}>{desc}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                            <div className={styles.content}>
-                                <h3>{exp.company}</h3>
-                                <span className={styles.role}>{exp.role}</span>
-                                <span className={styles.date}>{exp.period}</span>
-                                <ul className={styles.description}>
-                                    {exp.description.map((desc, i) => (
-                                        <li key={i}>{desc}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
+                        </RevealOnScroll>
                     ))}
                 </div>
             </div>
