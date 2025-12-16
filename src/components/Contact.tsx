@@ -10,13 +10,13 @@ const Contact = () => {
                 </div>
 
                 <div className={styles.content}>
-                    <div className={styles.card}>
+                    {/* <div className={styles.card}>
                         <h3>Location</h3>
                         <p className={styles.location}>Benin City, Edo State, Nigeria</p>
-                    </div>
+                    </div> */}
                     <div className={styles.card}>
                         <h3>LinkedIn</h3>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                        <a href="https://www.linkedin.com/in/osahonokoh/" target="_blank" rel="noopener noreferrer" className={styles.link}>
                             Connect on LinkedIn
                         </a>
                     </div>
