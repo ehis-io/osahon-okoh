@@ -1,0 +1,38 @@
+.section {
+    padding: 6rem 0;
+    background-color: white;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.heading h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.educationCard {
+    background: var(--light-bg);
+    padding: 2rem;
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+}
+
+.volunteering {
+    margin-top: 4rem;
+}
