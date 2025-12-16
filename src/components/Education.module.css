@@ -1,8 +1,7 @@
 .section {
-    padding: 4rem 0;
-    /* Reduced padding */
+    padding: 6rem 0;
     background-color: var(--light-bg);
-    border-top: 1px solid var(--border-color);
+    /* Use light bg to differentiate from white content above */
 }
 
 .container {
@@ -12,60 +11,56 @@
 }
 
 .heading {
-    display: none;
-    /* Hide main section title as we use sub-blocks now, or minimize it */
+    text-align: left;
+    /* Align left for professional feel */
+    margin-bottom: 3rem;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-
-/* If we want to keep the main title 'Credentials' distinct, we can.
-   But let's hide the big H2 title in the component if we didn't remove it in TSX.
-   Wait, I didn't remove the H2 in the TSX above, so I should style it or hide it if redundant.
-   The TSX has a .heading div. I can make it very subtle. */
 
 .heading h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    /* Smaller, less loud */
     color: var(--primary-color);
-    margin-bottom: 2rem;
-    display: none;
-    /* Actually, let's hide the big title to make it less obvious */
+    margin-bottom: 0;
+    display: block;
 }
 
-.contentWrapper {
+.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    /* More spacing */
+    row-gap: 2rem;
 }
 
-.sectionBlock h3 {
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #94a3b8;
-    /* Slate 400 - subtle label */
-    margin-bottom: 1.5rem;
+.educationCard {
+    /* Removed card styling */
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+}
+
+.educationCard h3 {
+    font-size: 1.1rem;
     font-weight: 600;
-}
-
-.compactList {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.compactList li {
-    font-size: 1rem;
-    color: var(--text-color);
-    line-height: 1.5;
-}
-
-.compactList li strong {
     color: var(--heading-color);
-    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.educationCard p {
+    font-size: 0.95rem;
+    color: #64748b;
+}
+
+.volunteering {
+    margin-top: 6rem;
 }
 
 @media (max-width: 768px) {
-    .contentWrapper {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+    /* No contentWrapper rule here anymore */
 }

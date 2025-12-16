@@ -20,80 +20,82 @@
     margin-bottom: 1rem;
 }
 
-.timeline {
-    position: relative;
-    max-width: 800px;
+.grid {
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.timeline::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 20px;
-    width: 2px;
-    background-color: var(--border-color);
-}
-
 .item {
-    position: relative;
-    padding-left: 60px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .item:last-child {
+    border-bottom: none;
     margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-.icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid var(--secondary-color);
+.header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    color: var(--secondary-color);
-    z-index: 10;
-    font-weight: bold;
+    /* Center align items since description is gone */
+    margin-bottom: 0;
+    /* No margin needed if no description */
 }
 
-.content h3 {
+.header h3 {
     font-size: 1.25rem;
-    margin-bottom: 0.25rem;
     color: var(--primary-color);
+    margin-bottom: 0.25rem;
+    font-weight: 700;
 }
 
 .role {
     color: var(--secondary-color);
     font-weight: 500;
-    margin-bottom: 0.5rem;
     display: block;
+    font-size: 1rem;
 }
 
 .date {
     font-size: 0.9rem;
-    color: #64748b;
-    margin-bottom: 1rem;
-    display: block;
+    color: #94a3b8;
+    white-space: nowrap;
+    margin-left: 2rem;
 }
 
 .description {
     color: var(--text-color);
+    line-height: 1.7;
+    font-size: 0.95rem;
+    padding-left: 0;
+    list-style: none;
+    /* Cleaner look without bullets, or maybe simple dashes if preferred */
 }
 
 .description li {
     margin-bottom: 0.5rem;
-    list-style-position: inside;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.description li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
-    .timeline::before {
-        left: 20px;
+    .header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .date {
+        margin-left: 0;
     }
 }

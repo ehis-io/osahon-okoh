@@ -51,26 +51,20 @@ const Experience = () => {
         <section id="experience" className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.heading}>
-                    <h2>Professional Experience</h2>
-                    <p>A proven record in public and private sectors.</p>
+                    <h2>Leadership History</h2>
+                    <p>Strategic roles held across public and private sectors.</p>
                 </div>
 
-                <div className={styles.timeline}>
+                <div className={styles.grid}>
                     {experiences.map((exp, index) => (
                         <RevealOnScroll key={index} delay={index * 100}>
                             <div className={styles.item}>
-                                <div className={styles.icon}>
-                                    {index + 1}
-                                </div>
-                                <div className={styles.content}>
-                                    <h3>{exp.company}</h3>
-                                    <span className={styles.role}>{exp.role}</span>
+                                <div className={styles.header}>
+                                    <div>
+                                        <h3>{exp.company}</h3>
+                                        <span className={styles.role}>{exp.role}</span>
+                                    </div>
                                     <span className={styles.date}>{exp.period}</span>
-                                    <ul className={styles.description}>
-                                        {exp.description.map((desc, i) => (
-                                            <li key={i}>{desc}</li>
-                                        ))}
-                                    </ul>
                                 </div>
                             </div>
                         </RevealOnScroll>
