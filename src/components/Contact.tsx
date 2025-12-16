@@ -22,8 +22,8 @@ const Contact = () => {
                     </div>
                     <div className={styles.card}>
                         <h3>Email</h3>
-                        <a href="mailto:contact@osahonokoh.com" className={styles.link}>
-                            contact@osahonokoh.com
+                        <a href="mailto:osahonokoh@gmail.com" className={styles.link}>
+                            osahonokoh@gmail.com
                         </a>
                     </div>
                 </div>
