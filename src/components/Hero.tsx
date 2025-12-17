@@ -30,7 +30,7 @@ const Hero = () => {
                 </div>
                 <div className={styles.imageContainer}>
                     <Image
-                        src="/osahon-main.jpg"
+                        src="/osahon.jpg"
                         alt="Osahon Okoh"
                         fill
                         priority
