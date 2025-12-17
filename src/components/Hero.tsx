@@ -6,14 +6,14 @@ const Hero = () => {
         <section className={styles.hero}>
             <div className={styles.container}>
                 <div className={styles.content}>
-                    <span className={styles.tagline}>Certified Management Consultant</span>
+                    <span className={styles.tagline}>Policy Advisor & Author</span>
                     <h1 className={styles.title}>Osahon Okoh</h1>
                     <p className={styles.subtitle}>
-                        A strategic leader and policy advisor bridging government, private sector, and civil society with a focus on impact-driven projects and organizational excellence.
+                        Bridging government, private sector, and civil society with 10+ years of expertise in policy advisory and organizational strategy.
                     </p>
                     <div className={styles.ctaGroup}>
-                        <a href="mailto:osahonokoh@gmail.com" className="btn btn-primary">Request Consultation</a>
-                        <a href="#skills" className={`${styles.outlineBtn}`}>View Expertise</a>
+                        <a href="#contact" className="btn btn-primary">Work With Me</a>
+                        <a href="#policy-advisory" className={`${styles.outlineBtn}`}>View Services</a>
                     </div>
 
                     <div className={styles.metrics}>

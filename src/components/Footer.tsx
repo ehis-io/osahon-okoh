@@ -5,9 +5,9 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.footerContainer}>
                 <div className={styles.socialLinks}>
-                    <a href="#" className={styles.socialLink}>LinkedIn</a>
-                    <a href="#" className={styles.socialLink}>Twitter</a>
-                    <a href="#" className={styles.socialLink}>Instagram</a>
+                    <a href="https://www.linkedin.com/in/osahonokoh/" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
+                    <a href="#" className={styles.link}>Twitter/X</a>
+                    <a href="#" className={styles.link}>Instagram</a>
                 </div>
                 <p className={styles.copyright}>
                     &copy; {new Date().getFullYear()} Osahon Okoh. All rights reserved.

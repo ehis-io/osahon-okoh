@@ -21,10 +21,11 @@ const Contact = () => {
                         </a>
                     </div>
                     <div className={styles.card}>
-                        <h3>Email</h3>
+                        <h3>Email & Newsletter</h3>
                         <a href="mailto:osahonokoh@gmail.com" className={styles.link}>
                             osahonokoh@gmail.com
                         </a>
+                        <p className={styles.note}>Newsletter signup coming soon.</p>
                     </div>
                 </div>
             </div>
