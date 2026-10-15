@@ -10,19 +10,28 @@ const Publications = () => {
 
                 <div className={styles.list}>
                     <div className={styles.item}>
-                        <h3>Navigating Governance</h3>
-                        <p>A reflection on public service delivery, policy implementation, and the realities of governance in Nigeria.</p>
-                        <a href="#" className={styles.readMore}>Read Essay &rarr;</a>
+                        <h3>Navigating Governance: My Memoir of Four Years of Service in the Public Sector</h3>
+                        <p>Four years into working in government, a reflection on the highs and lows of the journey and the nuances of governance seen from the inside.</p>
+                        <a
+                            href="https://www.linkedin.com/pulse/navigating-governance-my-memoir-four-years-service-public-okoh-mpm-nukye/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.readMore}
+                        >
+                            Read on LinkedIn &rarr;
+                        </a>
                     </div>
                     <div className={styles.item}>
-                        <h3>Transformation is a Marathon</h3>
-                        <p>Insights into sustainable change management and the long-term nature of institutional reform.</p>
-                        <a href="#" className={styles.readMore}>Read Brief &rarr;</a>
-                    </div>
-                    <div className={styles.item}>
-                        <h3>Newsletter Archive</h3>
-                        <p>Weekly thoughts on policy, leadership, and technology.</p>
-                        <a href="#" className={styles.readMore}>Browse Archive &rarr;</a>
+                        <h3>Transformation is a Marathon, Not a Sprint: Navigating Governance and Initiatives</h3>
+                        <p>Why government reform needs both quick wins and long-term institutional building, and how leaders can balance the two to deliver change that outlasts an administration.</p>
+                        <a
+                            href="https://www.linkedin.com/pulse/transformation-marathon-sprint-navigating-governance-osahon-okoh-mpm-dzilf/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.readMore}
+                        >
+                            Read on LinkedIn &rarr;
+                        </a>
                     </div>
                 </div>
             </div>
