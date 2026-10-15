@@ -6,8 +6,8 @@ const Footer = () => {
             <div className={styles.footerContainer}>
                 <div className={styles.socialLinks}>
                     <a href="https://www.linkedin.com/in/osahonokoh/" target="_blank" rel="noopener noreferrer" className={styles.link}>LinkedIn</a>
-                    <a href="#" className={styles.link}>Twitter/X</a>
-                    <a href="#" className={styles.link}>Instagram</a>
+                    <a href="https://x.com/OsahonOkoh" target="_blank" rel="noopener noreferrer" className={styles.link}>X (Twitter)</a>
+                    <a href="https://www.instagram.com/osahonokoh/" target="_blank" rel="noopener noreferrer" className={styles.link}>Instagram</a>
                 </div>
                 <p className={styles.copyright}>
                     &copy; {new Date().getFullYear()} Osahon Okoh. All rights reserved.
