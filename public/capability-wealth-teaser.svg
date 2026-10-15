@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="backdrop" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#f4f4f4"/>
+      <stop offset="1" stop-color="#dcdcdc"/>
+    </radialGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1b2a4a"/>
+      <stop offset="0.55" stop-color="#0f1a33"/>
+      <stop offset="1" stop-color="#070d1c"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#050a16"/>
+      <stop offset="1" stop-color="#13213d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#b8862b"/>
+      <stop offset="1" stop-color="#f3d27a"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#fff" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="18"/>
+    </filter>
+    <filter id="textBlur" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <clipPath id="coverClip">
+      <polygon points="268,70 610,92 610,712 268,742"/>
+    </clipPath>
+  </defs>
+
+  <rect width="800" height="800" fill="url(#backdrop)"/>
+
+  <!-- floor shadow -->
+  <ellipse cx="450" cy="745" rx="230" ry="26" fill="#000" opacity="0.28" filter="url(#shadow)"/>
+
+  <!-- spine -->
+  <polygon points="228,82 268,70 268,742 228,724" fill="url(#spine)"/>
+  <!-- page edges -->
+  <polygon points="610,92 626,100 626,704 610,712" fill="#e9e6df"/>
+
+  <!-- front cover -->
+  <polygon points="268,70 610,92 610,712 268,742" fill="url(#cover)"/>
+
+  <g clip-path="url(#coverClip)">
+    <!-- rising abstract forms, blurred beyond recognition -->
+    <g filter="url(#heavyBlur)" opacity="0.9">
+      <rect x="310" y="520" width="44" height="220" fill="url(#gold)"/>
+      <rect x="372" y="440" width="44" height="300" fill="url(#gold)"/>
+      <rect x="434" y="350" width="44" height="390" fill="url(#gold)"/>
+      <rect x="496" y="250" width="44" height="490" fill="url(#gold)"/>
+      <circle cx="560" cy="190" r="46" fill="#f3d27a"/>
+    </g>
+    <circle cx="440" cy="300" r="170" fill="#3b82f6" opacity="0.10" filter="url(#heavyBlur)"/>
+
+    <!-- illegible title -->
+    <g filter="url(#textBlur)" fill="#f5f0e6" font-family="Impact, 'Arial Black', sans-serif" font-weight="900">
+      <text x="296" y="168" font-size="52" textLength="284" lengthAdjust="spacingAndGlyphs" opacity="0.7">CAPABILITY</text>
+      <text x="296" y="226" font-size="52" textLength="190" lengthAdjust="spacingAndGlyphs" fill="#f3d27a" opacity="0.7">WEALTH</text>
+    </g>
+    <text x="300" y="690" fill="#f5f0e6" opacity="0.55" filter="url(#textBlur)"
+          font-family="'Arial Black', sans-serif" font-size="24" textLength="240" lengthAdjust="spacingAndGlyphs" font-weight="900">OSAHON G. OKOH</text>
+
+    <!-- glossy sheen -->
+    <polygon points="268,70 400,78 330,742 268,742" fill="url(#sheen)"/>
+  </g>
+
+  <!-- clear "coming soon" seal -->
+  <g transform="translate(560 630) rotate(-12)">
+    <circle r="62" fill="#c8102e"/>
+    <circle r="54" fill="none" stroke="#fff" stroke-opacity="0.6" stroke-width="2" stroke-dasharray="4 4"/>
+    <text y="-6" text-anchor="middle" fill="#fff" font-family="'Arial Black', sans-serif" font-size="17" font-weight="900" letter-spacing="1">COMING</text>
+    <text y="18" text-anchor="middle" fill="#fff" font-family="'Arial Black', sans-serif" font-size="17" font-weight="900" letter-spacing="1">SOON</text>
+  </g>
+</svg>

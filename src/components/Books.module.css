@@ -1,17 +1,17 @@
 .section {
     padding: 6rem 0;
-    background-color: var(--background);
+    background-color: var(--light-bg);
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
 .sectionTitle {
     font-size: 2.5rem;
-    color: var(--primary);
+    color: var(--primary-color);
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -23,7 +23,7 @@
 }
 
 .bookCard {
-    background: var(--card-bg);
+    background: var(--background-color);
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@
 }
 
 .bookCover {
-    height: 250px;
+    height: 320px;
     background: #e0e0e0;
     display: flex;
     align-items: center;
@@ -69,11 +69,11 @@
 
 .bookInfo h3 {
     margin-bottom: 0.5rem;
-    color: var(--primary);
+    color: var(--primary-color);
 }
 
 .genre {
-    color: var(--accent);
+    color: var(--secondary-color);
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -83,7 +83,40 @@
 }
 
 .description {
-    color: var(--text);
+    color: var(--text-color);
     margin-bottom: 1.5rem;
     flex: 1;
+}
+
+.coverImage {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+a.bookCover:hover .coverImage {
+    transform: scale(1.03);
+}
+
+.badge {
+    align-self: flex-start;
+    background: var(--primary-color);
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 1rem;
+}
+
+.badgeSoon {
+    background: var(--secondary-color);
+}
+
+.bookInfo .btn {
+    align-self: flex-start;
 }

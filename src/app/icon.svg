@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#172554"/>
+  <circle cx="24" cy="32" r="13" fill="none" stroke="#FFFFFF" stroke-width="5.5"/>
+  <circle cx="40" cy="32" r="13" fill="none" stroke="#60A5FA" stroke-width="5.5"/>
+  <!-- weave: white ring passes over the blue one at the top crossing -->
+  <path d="M29.49 20.22 A13 13 0 0 1 33.96 23.64" fill="none" stroke="#FFFFFF" stroke-width="5.5"/>
+</svg>
